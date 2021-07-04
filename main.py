@@ -10,7 +10,7 @@ def gen_primes():
         while n < math.sqrt(num):
             for nr in range(n, num + 1):
                 if n * nr in num_lst:
-                    num_lst.remove(p * nr)
+                    num_lst.remove(n * nr)
             n += 1
     print("Prime numbers from the range <2," + str(num) + "> : ", num_lst)
 
